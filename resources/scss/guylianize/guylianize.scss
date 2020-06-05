@@ -1,0 +1,36 @@
+body, html{
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+
+    div.footer-space{
+        width: 100%;
+        flex-grow: 1;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+}
+
+// Small sized screens (Phones)
+@media only screen and (max-width: 479px){
+    :root{
+        font-size: 14px;
+    }
+}
+
+@import './modules/colors';
+@import './modules/typography';
+@import './modules/buttons';
+@import './modules/formItems';
+@import './modules/pageStructure';

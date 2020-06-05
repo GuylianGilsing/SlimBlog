@@ -1,0 +1,20 @@
+input, select, textarea{
+    padding: 0.3rem 0.5rem;
+    resize: none;
+    outline: none;
+    border: solid 1px #ccc;
+}
+
+.input-field{
+    margin: 0.5rem 0px;
+    
+    label{
+        margin-bottom: 0.35rem;
+        display: block;
+        font-size: 1.05rem;
+    }
+
+    input, select, textarea{
+        width: 100%;
+    }
+}

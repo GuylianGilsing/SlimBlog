@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {# Any page metadata can be loaded here #}
+    {% block meta %}{% endblock %}
+    <title>Basic PHP boilerplate</title>
+    {# CSS stylesheets will be loaded in here #}
+    {% block css %}{% endblock %}
+    {# General Javascript files go here #}
+    {% block js %}{% endblock %}
+</head>
+<body>
+    {# Main website content goes here #}
+    {% block content %}{% endblock %}
+    {# Any Javascript file that needs to be loaded within the body goes here #}
+    {% block jsbody %}{% endblock %}
+</body>
+</html>

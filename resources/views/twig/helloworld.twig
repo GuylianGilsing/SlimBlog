@@ -1,0 +1,11 @@
+{% extends "layouts/base.twig" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ baseURL }}/css/app.min.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="container-welcome">
+    <h1>Hello {{ slug }}!</h1>
+</div>
+{% endblock %}

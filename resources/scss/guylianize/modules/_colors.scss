@@ -1,0 +1,458 @@
+/*
+
+    All colors taken from the palettes at flatuicolors.com:
+    https://flatuicolors.com
+
+*/
+
+$lightenPercentage: 10%;
+$darkenPercentage: 20%;
+
+$fusionRed: #fc5c65; // Red
+$jigglypuff: #ff9ff3; // Pink
+$orangeHibiscus: #fd9644; // Orange
+$flirtatious: #fed330; // Yellow
+$reptileGreen: #26de81; // Green
+$maximumBlueGreen: #2bcbba; // Turquoise
+$highBlue: #45aaf2; // Cyan
+$c64NTSC: #4b7bec; // Blue
+$lighterPurple: #a55eea; // Purple
+$twinkleBlue: #d1d8e0; // Silver
+$concrete: #95a5a6; // Light gray
+$wetAsphalt: #34495e; // Gray
+$midnightBlue: #2c3e50; // Gray (dark)
+
+// Text colors
+.txt-color-red{
+    color: $fusionRed;
+
+    &.txt-color-light{
+        color: lighten($fusionRed, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($fusionRed, $darkenPercentage);
+    }
+}
+
+.txt-color-pink{
+    color: $jigglypuff;
+
+    &.txt-color-light{
+        color: lighten($jigglypuff, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($jigglypuff, $darkenPercentage);
+    }
+}
+
+.txt-color-orange{
+    color: $orangeHibiscus;
+
+    &.txt-color-light{
+        color: lighten($orangeHibiscus, 12%);
+    }
+
+    &.txt-color-dark{
+        color: darken($orangeHibiscus, 15%);
+    }
+}
+
+.txt-color-yellow{
+    color: $flirtatious;
+
+    &.txt-color-light{
+        color: lighten($flirtatious, 12%);
+    }
+
+    &.txt-color-dark{
+        color: darken($flirtatious, 15%);
+    }
+}
+
+.txt-color-green{
+    color: $reptileGreen;
+
+    &.txt-color-light{
+        color: lighten($reptileGreen, 17%);
+    }
+
+    &.txt-color-dark{
+        color: darken($reptileGreen, 10%);
+    }
+}
+
+.txt-color-turquiose{
+    color: $maximumBlueGreen;
+
+    &.txt-color-light{
+        color: lighten($maximumBlueGreen, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($maximumBlueGreen, 10%);
+    }
+}
+
+.txt-color-cyan{
+    color: $highBlue;
+
+    &.txt-color-light{
+        color: lighten($highBlue, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($highBlue, $darkenPercentage);
+    }
+}
+
+.txt-color-blue{
+    color: $c64NTSC;
+
+    &.txt-color-light{
+        color: lighten($c64NTSC, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($c64NTSC, 15%);
+    }
+}
+
+.txt-color-purple{
+    color: $lighterPurple;
+
+    &.txt-color-light{
+        color: lighten($lighterPurple, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($lighterPurple, $darkenPercentage);
+    }
+}
+
+.txt-color-silver{
+    color: $twinkleBlue;
+
+    &.txt-color-light{
+        color: lighten($twinkleBlue, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($twinkleBlue, $darkenPercentage);
+    }
+}
+
+.txt-color-lightgray{
+    color: $concrete;
+
+    &.txt-color-light{
+        color: lighten($concrete, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: darken($concrete, $darkenPercentage);
+    }
+}
+
+.txt-color-gray{
+    color: $wetAsphalt;
+
+    &.txt-color-light{
+        color: lighten($wetAsphalt, $lightenPercentage);
+    }
+
+    &.txt-color-dark{
+        color: $midnightBlue;
+    }
+}
+
+// Background colors
+.bg-color-red, .btn.btn-color-red{
+    background-color: $fusionRed;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($fusionRed, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($fusionRed, $darkenPercentage);
+    }
+}
+
+.bg-color-pink, .btn.btn-color-pink{
+    background-color: $jigglypuff;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($jigglypuff, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($jigglypuff, $darkenPercentage);
+    }
+}
+
+.bg-color-orange, .btn.btn-color-orange{
+    background-color: $orangeHibiscus;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($orangeHibiscus, 12%);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($orangeHibiscus, 15%);
+    }
+}
+
+.bg-color-yellow, .btn.btn-color-yellow{
+    background-color: $flirtatious;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($flirtatious, 12%);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($flirtatious, 15%);
+    }
+}
+
+.bg-color-green, .btn.btn-color-green{
+    background-color: $reptileGreen;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($reptileGreen, 17%);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($reptileGreen, 10%);
+    }
+}
+
+.bg-color-turquiose, .btn.btn-color-turquiose{
+    background-color: $maximumBlueGreen;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($maximumBlueGreen, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($maximumBlueGreen, 10%);
+    }
+}
+
+.bg-color-cyan, .btn.btn-color-cyan{
+    background-color: $highBlue;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($highBlue, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($highBlue, $darkenPercentage);
+    }
+}
+
+.bg-color-blue, .btn.btn-color-blue{
+    background-color: $c64NTSC;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($c64NTSC, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($c64NTSC, 15%);
+    }
+}
+
+.bg-color-purple, .btn.btn-color-purple{
+    background-color: $lighterPurple;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($lighterPurple, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($lighterPurple, $darkenPercentage);
+    }
+}
+
+.bg-color-silver, .btn.btn-color-silver{
+    background-color: $twinkleBlue;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($twinkleBlue, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($twinkleBlue, $darkenPercentage);
+    }
+}
+
+.bg-color-lightgray, .btn.btn-color-lightgray{
+    background-color: $concrete;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($concrete, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: darken($concrete, $darkenPercentage);
+    }
+}
+
+.bg-color-gray, .btn.btn-color-gray{
+    background-color: $wetAsphalt;
+
+    &.bg-color-light, &.btn.btn-color-light{
+        background-color: lighten($wetAsphalt, $lightenPercentage);
+    }
+
+    &.bg-color-dark, &.btn.btn-color-dark{
+        background-color: $midnightBlue;
+    }
+}
+
+// Button hovers
+.btn.btn-color-red:hover{
+    background-color: lighten($fusionRed, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($fusionRed, $lightenPercentage), 5%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($fusionRed, $darkenPercentage), 5%);
+    }
+}
+
+.btn.btn-color-pink:hover{
+    background-color: lighten($jigglypuff, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: $jigglypuff;
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($jigglypuff, $darkenPercentage), 15%);
+    }
+}
+
+.btn.btn-color-orange:hover{
+    background-color: lighten($orangeHibiscus, 12%);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($orangeHibiscus, 12%), 8%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($orangeHibiscus, 15%), 5%);
+    }
+}
+
+.btn.btn-color-yellow:hover{
+    background-color: lighten($flirtatious, 15%);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($flirtatious, 12%), 10%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($flirtatious, 15%), 5%);
+    }
+}
+
+.btn.btn-color-green:hover{
+    background-color: lighten($reptileGreen, 17%);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($reptileGreen, 17%), 7%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($reptileGreen, 10%), 6%);
+    }
+}
+
+.btn.btn-color-turquiose:hover{
+    background-color: lighten($maximumBlueGreen, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($maximumBlueGreen, $lightenPercentage), 8%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($maximumBlueGreen, 10%), 5%);
+    }
+}
+
+.btn.btn-color-cyan:hover{
+    background-color: lighten($highBlue, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($highBlue, $lightenPercentage), 8%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($highBlue, $darkenPercentage), 8%);
+    }
+}
+
+.btn.btn-color-blue:hover{
+    background-color: lighten($c64NTSC, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($c64NTSC, $lightenPercentage), 5%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($c64NTSC, 15%), 10%);
+    }
+}
+
+.btn.btn-color-purple:hover{
+    background-color: lighten($lighterPurple, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($lighterPurple, $lightenPercentage), 5%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($lighterPurple, $darkenPercentage), 10%);
+    }
+}
+
+.btn.btn-color-silver:hover{
+    background-color: lighten($twinkleBlue, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: $twinkleBlue;
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($twinkleBlue, $darkenPercentage), 10%);
+    }
+}
+
+.btn.btn-color-lightgray:hover{
+    background-color: lighten($concrete, $lightenPercentage);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($concrete, $lightenPercentage), 8%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: darken(darken($concrete, $darkenPercentage), 8%);
+    }
+}
+
+.btn.btn-color-gray:hover{
+    background-color: lighten(lighten($wetAsphalt, $lightenPercentage), 5%);
+
+    &.btn.btn-color-light{
+        background-color: lighten(lighten($wetAsphalt, $lightenPercentage), 10%);
+    }
+
+    &.btn.btn-color-dark{
+        background-color: lighten($midnightBlue, 10%);
+    }
+}
