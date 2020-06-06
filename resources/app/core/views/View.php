@@ -5,6 +5,7 @@ use App\Interfaces\Views\ViewInterface;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
 use DI\Container;
+use App\Content\NavBarContent;
 
 class View implements ViewInterface
 {
@@ -70,6 +71,9 @@ class View implements ViewInterface
         if($this->container !== null && $this->request !== null)
         {
             $this->variables['baseURL'] = ServerBase();
+            $this->variables['siteName'] = $_ENV['SITE_NAME'];
+            $this->variables['navItems'] = NavBarContent::getNavbarItems();
+            $this->variables['currentPath'] = $this->request->getUri()->getPath();
 
             if($this->container->has('csrf'))
             {

@@ -1,0 +1,21 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+{% include "includes/header.twig" %}
+<div class="container">
+    <form action="{{ baseURL }}/login" method="POST">
+        <h3>Login</h3>
+        {{ errors }}
+        {{ csrfForm|raw }}
+        <div class="input-field">
+            <label for="">Username</label>
+            <input type="text" id="login-user_name" name="user_name" value="">
+        </div>
+        <div class="input-field">
+            <label for="">Password</label>
+            <input type="password" id="login-user_password" name="user_password" value="">
+        </div>
+        <button type="submit" class="btn btn-color-green">Login</button>
+    </form>
+</div>
+{% endblock %}

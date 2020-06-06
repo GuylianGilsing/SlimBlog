@@ -1,0 +1,12 @@
+<header id="main-header">
+    <a href="{{ baseURL }}/" class="logo">{{ siteName }}</a>
+    {% if navItems|length > 0 %}
+        <ul class="nav-items">
+            {% for url, name in navItems %}
+                <li {% if url == currentPath %} class="active" {% endif %}>
+                    <a href="{{ "#{basURL}#{url}" }}">{{ name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</header>

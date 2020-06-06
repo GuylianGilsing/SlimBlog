@@ -81,7 +81,20 @@ class FlashMessage
         if(!isset($_SESSION['app_flashdata'][$name]))
             return null;
 
-        return $_SESSION['app_flashdata'][$name];
+        $flashMessage = new FlashMessage($name);
+        if(count($_SESSION['app_flashdata'][$name]) > 0)
+        {
+            foreach($_SESSION['app_flashdata'][$name] as $key => $var)
+            {
+                if($key == "app_flashdata_key_created")
+                    continue;
+
+                $flashMessage->setKey($key, $var);
+            }
+
+        }
+        
+        return $flashMessage;
     }
 
     /**

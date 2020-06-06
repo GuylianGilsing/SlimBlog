@@ -17,7 +17,7 @@ class UserSeed extends AbstractSeed
     {
         $data = [
             [
-                'name' => "admin",
+                'name' => "Admin",
                 'email' => "admin@example.com",
                 'password' => password_hash('admin', PASSWORD_BCRYPT),
             ]

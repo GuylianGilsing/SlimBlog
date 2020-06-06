@@ -1,8 +1,46 @@
-.container-welcome{
-    width: 100vw;
-    height: 100vh;
+header#main-header{
+    padding: 0px 1.5rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: solid 1px #CCC;
+
+    .logo{
+        color: #000;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: #AAA;
+        }
+    }
+
+    .nav-items{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        li{
+            display: inline-block;
+
+            a{
+                padding: 1.35rem 1rem;
+                display: block;
+                opacity: 0.4;
+                color: #000;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            &.active, &:hover{
+                a{
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
